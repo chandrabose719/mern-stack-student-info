@@ -1,0 +1,42 @@
+###
+GET http://localhost:3001/student/all
+
+###
+GET http://localhost:3001/student/5
+
+###
+POST http://localhost:3001/student/new
+content-type: application/json
+
+{
+    "s_name": "Sankar",
+    "s_age":"11" 
+}
+
+###
+POST http://localhost:3001/student/edit/622780f32ad5c5413c241062
+content-type: application/json
+
+{
+    "s_name": "Bose Edited",
+    "s_age":"10" 
+}
+
+###
+DELETE http://localhost:3001/student/delete/
+
+###
+GET http://localhost:3001/next/all
+
+###
+GET http://localhost:3001/next/5
+
+
+###
+POST http://localhost:3001/next/new
+content-type: application/json
+
+{
+    "n_name": "Bose",
+    "n_age": 10
+}
